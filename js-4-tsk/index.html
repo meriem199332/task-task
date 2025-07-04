@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <section class="insta-pay">
+        <div class="balance-d py-3">
+            <h1 id="balance"></h1>
+        </div>
+    
+        <div class="calc-box">
+            <div class="input-d d-flex justify-content-center">
+                <input type="number" id="amountInput" class="px-5 mt-4 form-control w-50" placeholder="Enter amount">
+            </div>
+    
+            <div class="btns d-flex justify-content-center pt-3">
+                <button onclick="depositAmount()" id="deposit" class="btn btn-primary m-2">Deposit</button>
+                <button onclick="withdrawAmount()" id="withdraw" class="btn btn-primary m-2">Withdraw</button>
+            </div>
+        </div>
+    
+        <div class="history pt-4">
+            <h4>Transaction History</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Before</th>
+                        <th>After</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable"></tbody>
+            </table>
+        </div>
+        </section>
+    <!-- <button onclick="showTransaction()"> Show Transaction History  </button>
+    <button onclick="showData()">Show Data</button>
+    <button onclick="withdrawAmount()">withdraw</button>
+    <button onclick="depositAmount()">deposit</button> -->
+    <script src="./main.js"></script>
+</body>
+</html>
